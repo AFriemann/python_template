@@ -67,6 +67,9 @@ template_project() {
 
     template_file "$file"
   done
+
+  mkdir "$NAME"
+  cp .templates/* "$NAME"/
 }
 
 case $1 in
